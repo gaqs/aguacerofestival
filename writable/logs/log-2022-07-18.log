@@ -1,0 +1,11 @@
+CRITICAL - 2022-07-18 12:38:47 --> Undefined variable: selected
+#0 C:\xampp\htdocs\festival_v2\app\Views\forms\stands.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\festival_v2\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\festival_v2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\festival_v2\system\Common.php(1089): CodeIgniter\View\View->render('forms/stands', Array, true)
+#4 C:\xampp\htdocs\festival_v2\app\Controllers\Home.php(80): view('forms/stands')
+#5 C:\xampp\htdocs\festival_v2\system\CodeIgniter.php(825): App\Controllers\Home->stands()
+#6 C:\xampp\htdocs\festival_v2\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\festival_v2\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\festival_v2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
