@@ -33,7 +33,7 @@
         </div>
         <div class="col-md-12 text-center mb-5">
           <button type="submit" class="btn btn-primary bg-red text-white w-25 mt-3 hvr-grow submit_something" name="button">
-            <i class="fas fa-newspaper"></i> Suscribete
+            <b><i class="fas fa-newspaper"></i> Suscribete</b>
           </button>
         </div>
       </form>

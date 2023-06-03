@@ -2,7 +2,7 @@
 
 const gallery = document.querySelector('.gallery');
 
-const token = 'IGQVJYQVd4bUxXajZAwbTc0bmhneVVqbjFEck1qdWl6VnlZAcVR4WVJFTmxoM2lmM2J4ZAEFwcUhHb09zUjFta21GV1o2NkdfRTlaR1I1NE1Rc19LX0RhZAmhLTE43MEJCTmdncElQYVAyelZAVRllEM3l4SAZDZD';
+const token = 'IGQVJVVXBEVHAwTmlMQndUZAXJvbUZAWYmpzcnNyeDdFeXJ0cnpjdmtoNDk5VlY3OWxTaXp2QzI1QjJIcDhaX2RYRHNsY0lVYTZAyd0dSMnh3c3g5SW5HUW9QQmxIdUVfLXM2a3dWemZAneUhVSXlRbm5XdAZDZD';
 
 const url = `https://graph.instagram.com/me/media?fields=media_type,thumbnail_url,media_url,caption,permalink,timestamp&limit=6&access_token=${token}`;
     
@@ -12,11 +12,14 @@ fetch(url)
 
 function createHtml(data){
     var media;
+    console.log(data);
     for (const img of data) {
         if( img.media_type == 'IMAGE' ){
             media = img.media_url;
         }else if( img.media_type == 'VIDEO' ){
             media = img.thumbnail_url;
+        }else if( img.media_type == 'CAROUSEL_ALBUM' ){
+            media = img.media_url;
         }
 
         var time = new Date(img.timestamp).toLocaleDateString('es-CL');

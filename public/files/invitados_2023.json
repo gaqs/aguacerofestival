@@ -1,0 +1,64 @@
+{
+    "homenajeados": {
+      "0": {
+        "name": "Marta Carrasco",
+        "description": "Artista visual e ilustradora chilena reconocida en el mundo de la ilustración infantil y juvenil por su participación en títulos como Papelucho y Los Pecosos.",
+        "picture": "marta.jpg",
+        "social_network": "https://mujeresbacanas.com/marta-carrasco-1939-2007/"
+      },
+      "1": {
+        "name": "Guillo",
+        "description": "Dibujante de historietas Chileno, su humor es eminentemente politico y de satira. Autor de los libros El humor es mas fuerte, Tu tienes derecho a ser tu, Pinochet ilustrado, entre otros.",
+        "picture": "guillo.jpg",
+        "social_network": "https://guillo.cl/"
+      }
+    },
+    "miembros_del_jurado":{
+      "0" :{
+        "name": "Javiera<br>Argandoña",
+        "description": "Es autora integral del webcómic 'Edén Blanco'. Ha trabajado con clientes independientes de diferentes países, como Estados Unidos, Alemania y Australia.",
+        "picture": "javiera.jpg",
+        "social_network": "https://www.instagram.com/argando_a/?hl=es"
+      },
+      "1" :{
+        "name": "Blasfo",
+        "description": "Diseñador gráfico y artista autodidacta. Director de la feria de artes gráficas La Mansa Feria y secretario de la Asociación de cómics de Valdivia Aguacero.",
+        "picture": "blasfo.jpg",
+        "social_network": "https://www.instagram.com/blasfo_/?hl=es-la"
+      },
+      "2" :{
+        "name": "Sebastian Castro",
+        "description": "Publicista, redactor creativo, guionista y profesor. Co-creador de los 'Guardianes del Sur'.",
+        "picture": "sebastian.jpg",
+        "social_network": "https://www.narrativagrafica.cl/perfiles/sebastian-castro/"
+      },
+      "3" :{
+        "name": "Francisco Fernández",
+        "description": "Fundador de Mitomanocómics. Alguna de sus publicaciones son Antu, El Alma Perdida de la Ciencia, Colo Colo Cómic, Era Draconiana, entre otros.",
+        "picture": "francisco.jpg",
+        "social_network": "https://www.instagram.com/feznucleocreativo/"
+      },
+      "4" :{
+        "name": "Guido Kid<br>Salinas",
+        "description": "Ilustrador y dibujante independiente de historietas. Co-creador de los Guardianes del Sur. Creador de tienda de diseño e ilustracion 'Aguante'.",
+        "picture": "guido.jpg",
+        "social_network": "https://www.instagram.com/guidokidsalinas/?hl=es"
+      }
+    },
+    "invitados_nacionales": {
+      "0": {
+        "name": "Isabel Molina",
+        "description": "Periodista y Magíster en Sociología. Editora de Grafito Ediciones y socia fundadora de PLOP! Galería. Parte del comité editorial revista Brígida.",
+        "picture": "isabel.jpg",
+        "social_network": ""
+      }
+    },
+    "invitados_internacionales": {
+      "0": {
+        "name": "",
+        "description": "",
+        "picture": "",
+        "social_network": ""
+      }
+    }
+  }

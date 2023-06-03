@@ -21,6 +21,14 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+  font-family: 'alphakindregular';
+  src: url('../fonts/alphakind-webfont.woff2') format('woff2'),
+       url('../fonts/alphakind-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 
 :root {
@@ -41,7 +49,7 @@ body {
 }
 body {
     padding-top: 100px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
     /*
     background-image: url('../img/festival_fondo.jpg');
@@ -49,6 +57,12 @@ body {
   	background-repeat: no-repeat;
   	background-size: cover;
     */
+}
+.alphakind{
+  font-family: 'alphakindregular';
+}
+.font-black-border{
+  text-shadow: rgb(0, 0, 0) 4px 0px 0px, rgb(0, 0, 0) 3.87565px 0.989616px 0px, rgb(0, 0, 0) 3.51033px 1.9177px 0px, rgb(0, 0, 0) 2.92676px 2.72656px 0px, rgb(0, 0, 0) 2.16121px 3.36588px 0px, rgb(0, 0, 0) 1.26129px 3.79594px 0px, rgb(0, 0, 0) 0.282949px 3.98998px 0px, rgb(0, 0, 0) -0.712984px 3.93594px 0px, rgb(0, 0, 0) -1.66459px 3.63719px 0px, rgb(0, 0, 0) -2.51269px 3.11229px 0px, rgb(0, 0, 0) -3.20457px 2.39389px 0px, rgb(0, 0, 0) -3.69721px 1.52664px 0px, rgb(0, 0, 0) -3.95997px 0.56448px 0px, rgb(0, 0, 0) -3.97652px -0.432781px 0px, rgb(0, 0, 0) -3.74583px -1.40313px 0px, rgb(0, 0, 0) -3.28224px -2.28625px 0px, rgb(0, 0, 0) -2.61457px -3.02721px 0px, rgb(0, 0, 0) -1.78435px -3.57996px 0px, rgb(0, 0, 0) -0.843183px -3.91012px 0px, rgb(0, 0, 0) 0.150409px -3.99717px 0px, rgb(0, 0, 0) 1.13465px -3.8357px 0px, rgb(0, 0, 0) 2.04834px -3.43574px 0px, rgb(0, 0, 0) 2.83468px -2.82216px 0px, rgb(0, 0, 0) 3.44477px -2.03312px 0px, rgb(0, 0, 0) 3.84068px -1.11766px 0px, rgb(0, 0, 0) 3.9978px -0.132717px 0px;
 }
 .btn{
   font-size: 1.1rem;
@@ -68,6 +82,11 @@ a:hover, a:link, a:active{
 .navbar{
   background-color: white;
 }
+.errors ul{
+  list-style:none;
+  margin:0;
+}
+
 .container-fluid{
   width: 100% !important;
   max-width: 1500px;
@@ -100,7 +119,7 @@ a:hover, a:link, a:active{
   position: absolute;
   font-weight: bold;
   color: #df0009 !important;
-  margin-top: -250px;
+  margin-top: -310px;
 }
 .logos_top_2{
   position: absolute;
@@ -114,18 +133,20 @@ a:hover, a:link, a:active{
 #concurso{
   padding: 4rem 0 3rem 0;
   /*background-color: rgba(246, 237, 19, 1);*/
-  background-image: url('../img/background_concurso.jpg');
+  background-image: url('../img/background_concurso.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-top: 4px solid black;
 }
 #stands{
-  padding: 3rem 0 0 0;
-  /*background-color: rgba(246, 237, 19, 1);*/
-  /*background-image: url('../img/stands_back_2.jpg');*/
-  background-position: center;
+  background-image: url('../img/background_stands2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
 }
 .stand_container, .card_container{
   overflow: hidden;
@@ -233,6 +254,7 @@ padding: 10px;
     letter-spacing: 0px;
     font-size: 2.2rem;
     font-weight: 700;
+    line-height: 0.7;
 }
 
 .navbar-container {
@@ -380,29 +402,39 @@ padding: 10px;
   visibility: visible;
   margin-right: 6rem;
 }
-
-.slider_1, .slider_2, .slider_3, .slider_4, .slider_5{
+/*
+.slider_1, .slider_2{
   height: 600px;
   width: 100%;
   background-position: center center;
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
-.slider_1, .slider_2, .slider_4{
-  background-image: url('../img/sliders/2021/general.jpg');
-}
-.slider_3{
-  background-image: url('../img/sliders/2021/newsletter.png');
+.slider_1, .slider_2{
+  background-image: url('../img/background_carousel_4.png');
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.slider_5{
-  background-image: url('../img/banner_mac.jpg');
-  width: 100%;
+*/
+.carousel_logo{
+  //height: 600px;
+  display: inline-grid;
+  background-color:  var(--yellow);
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+  border-top: 4px solid black;
+}
+.carousel_info{
+  height: 600px;
+  background-image: url('../img/fondo1_rojo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  border-left: 4px solid black;
+  border-bottom: 4px solid black;
+  border-top: 4px solid black;
 }
+
 .back_amarillo{
   background-color: #f6ed12;
   padding:50px 30px 50px 30px;
@@ -416,7 +448,7 @@ padding: 10px;
 /* Carousel base class */
 .carousel {
   /*margin-bottom: 4rem;*/
-  margin-top: 35px;
+  margin-top: 15px;
 }
 /* Since positioning the image, we need to help out the caption
 .carousel-caption {
@@ -488,17 +520,11 @@ padding: 10px;
 
 /*---------Countdown-----------*/
 #countdown{
-    padding: 5rem 0 5rem 0;
+    background-color: transparent;
+    border-bottom: 4px solid black;
+    margin-top: 3rem;
 }
 
-#countdown{
-	background-image: url('../img/background_festival.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-  border-top: 20px solid #f0e624;
-  border-bottom: 20px solid #f0e624;
-}
 .countdown-container {
 	position: relative;
 	top: 50%;
@@ -553,7 +579,6 @@ padding: 10px;
 	.clock-item {
 		margin: 0px 0px 30px 0px;
 	}
-
 }
 
 .invitado_container{
@@ -585,7 +610,6 @@ padding: 10px;
 }
 
 .info_invitado{
-  display: flex;
   position: absolute;
   right: 0;
   left: 0;
@@ -655,6 +679,10 @@ padding: 10px;
 .text-red{
   color: #df0009 !important;
 }
+
+.text-yellow{
+  color: var(--yellow);
+}
 .bg-red{
   background-color: #df0009 !important;
   border-color: #df0009 !important;
@@ -662,8 +690,9 @@ padding: 10px;
 
 
 .delay-10ms{
-  animation-delay: 500ms;
+  animation-delay: 300ms;
 }
+
 
 .slider_2 div.row{
   padding-top: 8rem;
@@ -755,7 +784,7 @@ padding: 10px;
   position: relative;
   z-index: 1;
   filter:brightness(60%);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .play_yutu{
 position: absolute;
@@ -797,7 +826,8 @@ z-index: -1;
   width: inherit;
 }
 .image_slider{
-  max-width: 650px;
+  max-width: 300px;
+
 }
 .image_slider_abs{
   max-width: 750px;
@@ -852,14 +882,35 @@ z-index: -1;
   font-size: 2rem;
 }
 
+.animate__delay-04s{
+  animation-delay: 400ms;
+}
+.animate__delay-05s{
+  animation-delay: 500ms;
+}
+
+
 /*   RESPONSIVE  */
 @media(max-width: 540px){
   .slider_2 div.row{
     padding-top: 3rem;
   }
+  .logos_top{
+    margin-top:-200px;
+  }
 }
 
 @media (max-width: 767px){
+
+  .carousel_info{
+    display: none;
+  }
+  .slider_1, .slider_2{
+    background-position: unset;
+  }
+  .slider_caption{
+    justify-content: center;
+  }
 
   .slider_2 .row .col-md-3 img{
     display: none;
@@ -908,7 +959,6 @@ z-index: -1;
     width: 100% !important;
   }
   #auspicio .container-fluid .container .row div:first-child{
-    margin-right: 1rem;
     margin-bottom: 2rem !important;
   }
   #subs_button{

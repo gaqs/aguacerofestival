@@ -6,10 +6,12 @@ use CodeIgniter\Model;
 class StandModel extends Model{
   protected $table = 'stands';
   protected $primaryKey = 'id';
-  protected $allowedFields = ['id','email','name','rrss','description','resp_name','resp_email','resp_phone','resp_activity','resp_sii','resp_participants','bank_titular','bank_rut','bank_email','bank_name','bank_type','bank_number','created_at'];
-  protected $useSoftDeletes = true;
+  protected $allowedFields = ['id','name','rrss','description','medium','big','resp_name','resp_email','resp_phone','resp_participants','business_name','business_rut','business_sii','business_sell','bank_titular','bank_rut','bank_email','bank_name','bank_type','bank_number','created_at'];
+  protected $useSoftDeletes = false;
   protected $useTimestamps = true;
   protected $createdField  = 'created_at';
+  protected $updatedField  = 'updated_at';
+  protected $deletedField  = 'deleted_at';
   protected $beforeInsert = ['beforeInsert'];
   protected $beforeUpdate = ['beforeUpdate'];
 

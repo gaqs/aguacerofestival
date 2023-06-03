@@ -38,7 +38,6 @@ $(document).ready(function() {
 		$('html, body').animate({
 			scrollTop: 0
 		}, '300');
-
 	});
 	
 	/**
@@ -151,15 +150,45 @@ $(document).ready(function() {
 	Array.prototype.slice.call(forms)
 	  .forEach(function (form) {
 		form.addEventListener('submit', function (event) {
+
+			var submitButton = document.querySelector('[name="submit_something"]');
+			var defaultIcon = submitButton.children[0].className;
+			submitButton.classList.add('disabled');
+			submitButton.children[0].className = 'fa-solid fa-circle-notch fa-spin';
+
 		  if (!form.checkValidity()) {
 			event.preventDefault()
 			event.stopPropagation()
+
+			submitButton.classList.remove('disabled');
+			submitButton.children[0].className = defaultIcon;
+
+			$('html, body').animate({
+				scrollTop: 0
+			}, '300');
+
 		  }
   
 		  form.classList.add('was-validated')
 		}, false)
 	  })
   })()
+
+
+  var closed = document.querySelectorAll('[name="button_close"]');
+
+	closed.forEach( button => {
+	button.addEventListener("click", function(){
+		sessionStorage.setItem("wasClosed", "true");
+	});
+	
+	})
+	
+	if( sessionStorage.getItem("wasClosed") != "true"){
+	setTimeout(function(){
+		$('#le_modal').modal('toggle');
+	}, 1000);
+	}
   
 
 

@@ -24,7 +24,6 @@ class App extends BaseConfig
      * @var string
      */
     public $baseURL = 'http://localhost/festival_v2/';
-    public $instaToken = 'IGQVJYQVd4bUxXajZAwbTc0bmhneVVqbjFEck1qdWl6VnlZAcVR4WVJFTmxoM2lmM2J4ZAEFwcUhHb09zUjFta21GV1o2NkdfRTlaR1I1NE1Rc19LX0RhZAmhLTE43MEJCTmdncElQYVAyelZAVRllEM3l4SAZDZD';
 
     /**
      * --------------------------------------------------------------------------
@@ -70,7 +69,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $defaultLocale = 'en';
+    public $defaultLocale = 'es';
 
     /**
      * --------------------------------------------------------------------------
@@ -97,7 +96,7 @@ class App extends BaseConfig
      *
      * @var string[]
      */
-    public $supportedLocales = ['en'];
+    public $supportedLocales = ['es'];
 
     /**
      * --------------------------------------------------------------------------
@@ -109,7 +108,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $appTimezone = 'America/Chicago';
+    public $appTimezone = 'America/Santiago';
 
     /**
      * --------------------------------------------------------------------------
