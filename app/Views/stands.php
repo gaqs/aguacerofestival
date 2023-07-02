@@ -32,21 +32,22 @@
 <section id="stands" >
     <div class="container mt-5 text-center">
         <h2 class="text-red display-4">POSTULACION STANDS 2023</h2>
-        <h4 class="text-red mb-5"><b>Desde el 29 de Julio al 31 de Agosto.</b></h4>
-        <div class="row justify-content-center">
-            <div class="col-md-5">
+        <h4 class="text-red mb-5"><b>Desde el 03 de Julio al 06 de Agosto a las 23:59</b></h4>
+        <div class="row justify-content-center d-flex">
+            <div class="col-md-7 align-self-center">
                 <img src="<?= base_url('img/saval.jpg');?>" class="w-100" alt="">
             </div>
-            <div class="col-md-5 text-start">
-                <b>Resultados disponibles el 5 de Agosto.</b>
-                <br><br>
-                <p>Convocatoria para librerias, tiendas, artistas, relacionados a la narrativa grafica e ilustración.</p>
+            <div class="col-md-5 text-start align-self-center">
+                <b class="fs-5">La única vía de postulación es por medio de la página web.</b><br><br>
+                <p>Contamos con una capacidad de <b>100 stands</b> para esta versión, dándole prioridad a postulantes relacionados a la narrativa gráfica y áreas afines. Se considerarán artistas, editoriales, librerías y tiendas con propuestas innovadoras que se ajusten a la 9º versión del festival. </p>
                 <p>
-                    <b>Cupos:</b> 100 Stands disponibles.<br>
-                    <b>Fecha del evento:</b> Viernes 16 al Domingo 18 de Diciembre.<br>
-                    <b>Lugar:</b> Centro de Ferias del Parque Saval. Ubicado en Av.Miguel Agüero s/n, Isla Teja, Valdivia.
+                    <b>Fecha del evento:</b> Viernes 01 al Domingo 03 de Diciembre de 2023.<br>
+                    <b>Lugar:</b> Centro de Ferias del Parque Saval. Ubicado en Av.Miguel Agüero s/n, Isla Teja, Valdivia.<br>
+                    <b>Resultados postulación:</b> 09 de Agosto, vía correo electrónico.
                 </p>
-                <div class="btn btn-danger text-white mt-4"><i class="fa-solid fa-paste"></i> Ir a detalles y Formulario</div>
+                <a href="<?= base_url('home/briefing'); ?>" class="btn btn-danger text-white mt-4 pt-2 w-100">
+                    <h2><i class="fa-solid fa-paste"></i> Ir a detalles y Formulario</h2>
+                </a>
             </div>
         </div>
     </div>

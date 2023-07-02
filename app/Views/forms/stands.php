@@ -47,8 +47,7 @@
 									</div>
 									<div class="mb-3 col-md-7">
 										<label for="input_description" class="form-label">Descripción de Marca/Artista/Tienda</label>
-										<textarea class="form-control" id="input_description" name="description" value="<?= set_value('description'); ?>" rows="3" aria-describedby="description_help" required>
-										</textarea>
+										<textarea class="form-control" id="input_description" name="description" rows="4" aria-describedby="description_help" required><?= set_value('description'); ?></textarea>
 										<div id="description_help" class="form-text">La información que indiques, será utilizada para evaluar la compatibilidad con el evento al momento de seleccionar y para conocer el trabajo que planeas mostrar en el festival.</div>
 									</div>
 									
@@ -83,11 +82,9 @@
 										<input type="text" class="form-control" id="input_resp_country" name="resp_country" value="<?= set_value('resp_country'); ?>" aria-describedby="resp_country" placeholder="Ejemplo. Valdivia, XIV Región de los Rios, Chile" required>
 										<div id="resp_country_help" class="form-text"></div>
 									</div>
-									<div class="mb-3 col-md-6">
+									<div class="mb-3 col-md-7">
 										<label for="input_participants" class="form-label">Listado de los participantes</label>
-										<textarea class="form-control" id="input_participants" name="participants" rows="3" aria-describedby="participants_help" required>
-											<?= set_value('resp_participants'); ?>
-										</textarea>
+										<textarea class="form-control" id="input_participants" name="participants" rows="4" aria-describedby="participants_help" required><?= set_value('resp_participants'); ?></textarea>
 										<div id="participants_help" class="form-text">Indicar a las personas que conforman tu equipo, para el stand y acceso a la bodega.</div>
 									</div>
 
@@ -102,12 +99,12 @@
 								<h6 class="card-subtitle mb-2 text-muted">Informacion necesaria para el SII e impuesto municipal.</h6>
 								<hr>
 								<div class="row">
-									<div class="mb-3 col-md-4">
+									<div class="mb-3 col-md-6">
 										<label for="input_busines_rut" class="form-label">RUT Empresa</label>
 										<input type="text" class="form-control" id="input_business_rut" name="business_rut" value="<?= set_value('business_rut'); ?>" aria-describedby="business_rut_help" required>
 										<div id="busines_rut_help" class="form-text"></div>
 									</div>
-									<div class="mb-3 col-md-8">
+									<div class="mb-3 col-md-6">
 										<label for="input_busines_name" class="form-label">Nombre de la Empresa</label>
 										<input type="text" class="form-control" id="input_business_name" name="business_name" value="<?= set_value('business_name'); ?>" aria-describedby="business_name_help" required>
 										<div id="busines_name_help" class="form-text"></div>
@@ -122,17 +119,17 @@
 										<input type="text" class="form-control" id="input_business_sii" name="business_sii" value="<?= set_value('business_sii'); ?>" aria-describedby="business_sii_help" required>
 										<div id="business_sii_help" class="form-text">Ya sea como persona natural o empresa, debe indicar a qué corresponde su tipo de venta</div>
 									</div>
-									<div class="mb-3 col-md-12">
-										<label for="input_business_sell" class="form-label">Actividad comercial</label>
-										<input type="text" class="form-control" id="input_business_sell" name="business_sell" value="<?= set_value('business_sell'); ?>" aria-describedby="business_sell_help" required>
-										<div id="business_sell_help" class="form-text">¿Que vendes?</div>
+									<div class="mb-3 col-md-7">
+										<label for="textarea_business_sell" class="form-label">Actividad comercial - ¿Que vende?</label>
+										<textarea class="form-control" id="textarea_business_sell" name="business_sell" rows="4" aria-describedby="business_sell_help" required><?= set_value('business_sell'); ?></textarea>
+										<div id="business_sell_help" class="form-text">Indique los productos a vender en el evento. Solamente se podrán vender los listados en este medio, cualquier producto no listado deberá ser retirado los días del evento.</div>
 									</div>
 
 
 
-									<div class="col-md-12 mt-5">
-										<div class="text-red">Representante legal</div>
-										<hr class="mb-3">
+									<div class="col-md-12 mt-3">
+										<div>Representante legal</div>
+										<hr class="mb-3 w-75">
 									</div>
 									<div class="mb-3 col-md-6">
 										<label for="input_business_legalname" class="form-label">Nombre</label>
@@ -199,13 +196,14 @@
 							</div>
 						</div>
 						<div class="form-check mt-5">
-							<input class="form-check-input" type="checkbox" value="" id="check_bases" onclick="is_checked()">
-							<label class="form-check-label" for="check_bases">
-								Por el solo hecho de presentar su postulación a esta convocatoria a travez del portal festival.aguacerocomics.cl, se entiende que, para todos los efectos legales los postulantes conocen y aceptan integramente las presentes bases y aceptan la evaluación y selección determiandos por la organización del evento, además de los derechos y deberes que estas bases consideran.
+							<input class="form-check-input" type="checkbox" value="" id="check_bases" onclick="is_checked()" style="cursor:pointer;">
+							<label class="form-check-label" for="check_bases" style="cursor:pointer;">
+								Por el solo hecho de presentar su postulación a esta convocatoria a través del portal festival.aguacerocomics.cl, se entiende que, para todos los efectos legales los postulantes conocen y aceptan integramente las presentes bases y aceptan la evaluación y selección determinandos por la organización del evento, además de los derechos y deberes que estas bases consideran.
 							</label>
 						</div>
-						<button class="btn btn-lg btn-primary w-100 mt-5 disabled" type="submit" id="submit_stand">
-							<i class="fa-solid fa-arrow-up-right-from-square"></i> Enviar </button>
+						<button class="btn btn-lg btn-danger w-100 mt-5 disabled fs-5" type="submit" id="submit_stand" name="submit_something">
+							<i class="fa-solid fa-paper-plane"></i> Enviar postulación
+						</button>
 					</div>
 				</div>
 			</div>

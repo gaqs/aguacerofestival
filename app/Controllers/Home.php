@@ -184,6 +184,7 @@ class Home extends BaseController
 
             'business_name'     => $this->request->getVar('business_name'),
             'business_rut'      => $this->request->getVar('business_rut'),
+            'business_address'  => $this->request->gerVar('business_address'),
             'business_sii'      => $this->request->getVar('business_sii'),
             'business_sell'     => $this->request->getVar('business_sell'),
 

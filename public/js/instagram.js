@@ -2,7 +2,7 @@
 
 const gallery = document.querySelector('.gallery');
 
-const token = 'IGQVJVVXBEVHAwTmlMQndUZAXJvbUZAWYmpzcnNyeDdFeXJ0cnpjdmtoNDk5VlY3OWxTaXp2QzI1QjJIcDhaX2RYRHNsY0lVYTZAyd0dSMnh3c3g5SW5HUW9QQmxIdUVfLXM2a3dWemZAneUhVSXlRbm5XdAZDZD';
+const token = 'IGQVJXYmxkbk5Xc0JPRlVXdTdVdFNDUllfVmw1TWc2OTBoSmx0dnpGZAmRpUzRKQzltYVc3QW1RSjBpc0RJZADZAFR0Rkd1BVUUhrOWJWRTZA3aVY5SFdxQzIxdHVIeElsOFVQT0tnQVgwbFpFWE5SUjMyTwZDZD';
 
 const url = `https://graph.instagram.com/me/media?fields=media_type,thumbnail_url,media_url,caption,permalink,timestamp&limit=6&access_token=${token}`;
     

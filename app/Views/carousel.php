@@ -89,8 +89,8 @@
 
           <div class="col-md-6 carousel_logo pt-md-5 py-5">
             <div class="py-4 pb-md-0 text-md-end text-center align-self-center animate__animated animate__bounceInUp animate__delay-05s">
-                <h1 class="text-black"><b>9NA COMPETENCIA NACIONAL<br><span class="text-red">DE CÓMICS AGUACERO 2023</span></b></h1>
-                <p class="ms-5 ps-5 text-black"><b>La Asociación de cómics de Valdivia, institución a cargo de la organización del 9no Festival Internacional de Cómics de Valdivia, convoca a participar de la Novena Competencia de Cómics 2023.</b></p>
+                <h1 class="text-black lh-1" style="font-size:5rem;" ><b>9na Competencia Nacional de Cómics<span class="text-red"> AGUACERO 2023</span></b></h1>
+                <p class="ms-5 ps-5 text-black"><b>¡Lápiz y papel alerta!</b></p>
             </div>
           </div>  
           
@@ -98,7 +98,7 @@
           <div class="col-md-6 text-start">
             <div class="row carousel_info">
             <div class="text-white d-flex align-items-center animate__animated animate__bounceInDown animate__delay-04s">
-              <h1>PARA MAYOR INFORMACIÓN<br><a style="color:#f6ed12 !important;display:contents;" href="<?= base_url('#concurso')?>">HAZ CLICK AQUI</a></h1>
+              <h1>Para mayor información<br><a style="color:#f6ed12 !important;display:contents;" href="<?= base_url('#concurso')?>">haz click aquí</a></h1>
             </div>
             </div>  
           </div>

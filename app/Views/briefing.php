@@ -35,17 +35,16 @@
             </div>
 
             <div class="col-md-5">
-                <div class="card w-100 text-start">
+                <div class="card w-100 h-100 ext-start">
                     <div class="card-body">
                         <h2 class="card-title">Adicionalmente</h2>
                         <p class="card-text">
                         <ol>
-                            <li>Cenefa con nombre y logotipo del expositor.</li>
+                            <li>Cenefa incluye numeración, nombre y logotipo del expositor.</li>
                             <li>Visualización del expositor en nuestra página web para difusión durante los meses septiembre, octubre, noviembre y diciembre.</li>
                             <li>Publicación del expositor en nuestras redes sociales Facebook e Instagram.</li>
-                            <li>Entrega de credenciales.</li>
+                            <li>Credenciales.</li>
                             <li>Bodega.</li>
-                            <li>Guardias de Seguridad.</li>
                         </ol>
                         </p>
                     </div>
@@ -79,7 +78,9 @@
                 </div>
             </div>
             <div class="col-md-12 mt-3">
-                <a href="<?= base_url('home/stands'); ?>" class="btn btn-primary btn-lg w-100 bg-red text-white disabled" id="next_stands"><i class="fa-solid fa-paste"></i> Ir al Formulario</a>
+                <a href="<?= base_url('home/stands'); ?>" class="btn btn-primary btn-lg w-100 bg-red text-white disabled pt-2 w-10" id="next_stands">
+                    <h2><i class="fa-solid fa-paste"></i> Ir al Formulario</h2>
+                </a>
             </div>
 
         </div>

@@ -61,6 +61,9 @@
           <a class="nav-link" href="<?= base_url('#concurso');?>"><b>COMPETENCIA</b></a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="<?= base_url('#stands');?>"><b>POSTULACION STANDS</b></a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="<?= base_url('#galeria');?>"><b>GALERIA</b></a>
         </li>
         <li class="nav-item">

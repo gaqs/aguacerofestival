@@ -24,16 +24,20 @@
             <th>Nombre</th>
             <th>Red Social</th>
             <th>Descripcion</th>
-            <th>Mediano</th>
-            <th>Grande</th>
+            <th>Stands</th>
             <th>Nombre Resp.</th>
             <th>Email Resp.</th>
             <th>Telefono Resp.</th>
+            <th>Pais Resp.</th>
             <th>Participantes</th>
             <th>Nombre Empresa y/o Persona</th>
             <th>RUT Empresa</th>
+            <th>Direccion Empresa</th>
             <th>Giro Comercial SII</th>
             <th>Actividad Comercial</th>
+            <th>Nombre RL</th>
+            <th>Direccion RL</th>
+            <th>Telefono RL</th>
             <th>Nombre Completo</th>
             <th>RUT</th>
             <th>Correo</th>
@@ -42,7 +46,6 @@
             <th>Numero Cuenta</th>
             <th>Creado</th>
             <th>Foto perfil</th>
-            <th>Pase movilidad</th>
         </tr>
         <?php
           for ($i=0; $i < count($stand); $i++) { 
@@ -50,23 +53,25 @@
             $dir = ROOTPATH . 'public/files/stands/' . $stand[$i]['id'] . '/';
 
             $logo = array_map('basename', glob($dir."logo_*", GLOB_BRACE));
-            $pase = array_map('basename', glob($dir."pase_*", GLOB_BRACE));
 
           echo '<tr>
                   <td>'.$stand[$i]['id'].'</td>
                   <td>'.$stand[$i]['name'].'</td>
                   <td>'.$stand[$i]['rrss'].'</td>
                   <td>'.$stand[$i]['description'].'</td>
-                  <td>'.$stand[$i]['medium'].'</td>
-                  <td>'.$stand[$i]['big'].'</td>
+                  <td>'.$stand[$i]['stands'].'</td>
                   <td>'.$stand[$i]['resp_name'].'</td>
                   <td>'.$stand[$i]['resp_email'].'</td>
                   <td>'.$stand[$i]['resp_phone'].'</td>
+                  <td>'.$stand[$i]['resp_country'].'</td>
                   <td>'.$stand[$i]['resp_participants'].'</td>
                   <td>'.$stand[$i]['business_name'].'</td>
                   <td>'.$stand[$i]['business_rut'].'</td>
                   <td>'.$stand[$i]['business_sii'].'</td>
                   <td>'.$stand[$i]['business_sell'].'</td>
+                  <td>'.$stand[$i]['business_legalname'].'</td>
+                  <td>'.$stand[$i]['business_legaladdress'].'</td>
+                  <td>'.$stand[$i]['business_legalphone'].'</td>
                   <td>'.$stand[$i]['bank_titular'].'</td>
                   <td>'.$stand[$i]['bank_rut'].'</td>
                   <td>'.$stand[$i]['bank_email'].'</td>
@@ -76,15 +81,10 @@
                   <td>'.$stand[$i]['created_at'].'</td>';
             echo '<td>';
                   for ($j=0; $j < count($logo); $j++) { 
-                    echo base_url('files/stands/'.$stand[$i]['id'].'/'.$logo[$j].'/' ).'<br>';
+                    echo '<a href="'.base_url('files/stands/'.$stand[$i]['id'].'/'.$logo[$j].'/' ).'" target="_blank">Logo #'.($j+1).'</a><br>';
                   }
-            echo '</td>'; 
-            echo '<td>';
-                  for ($k=0; $k < count($pase); $k++) { 
-                    echo base_url('files/stands/'.$stand[$i]['id'].'/'.$pase[$k].'/' ).'<br>';
-                  }
-            echo '</td>';     
-            echo '</tr>'; 
+            echo '</td>
+              </tr>';
           }
         ?>
       </table>

@@ -14,7 +14,7 @@
           <img src="https://i3.ytimg.com/vi/W6S-CLCEb_c/maxresdefault.jpg" class="w-100 thumbnail" alt="">
         </a>
         <a href="<?= base_url('#'); ?>" target="_blank" class="btn btn-success btn-lg text-white hvr-grow mb-3 w-100 disabled d-none">
-          <h3 class="m-0"><i class="fas fa-file-pdf pe-2"></i> GANADORES CONCURSO DE CÓMICS 2022</h3>
+          <h3 class="m-0"><i class="fas fa-file-pdf pe-2"></i> Ganadores concurso de cómics 2022</h3>
         </a>
       </div>
       <div class="col-md-5 text-start">
@@ -23,13 +23,13 @@
           Para mayor información, revise las bases que se encuentran en el siguiente enlace.
         </p>
         <a href="<?= base_url('files/competition/BASES_COMPETENCIA_NACIONAL_COMICS_2023.pdf'); ?>" target="_blank" class="btn btn-primary btn-lg text-white hvr-grow mb-3 w-100 pt-2">
-          <h3 class="m-0"><i class="fas fa-file-pdf pe-2"></i> BASES CONCURSO DE CÓMICS 2023</h3>
+          <h3 class="m-0"><i class="fas fa-file-pdf pe-2"></i> Bases concurso de cómics 2023</h3>
         </a>
         <p class="text-black">
           Para participar y subir tu trabajo, haz click en el siguiente enlace.  
         </p>
         <a href="<?= base_url('home/competition'); ?>" class="btn btn-primary btn-lg bg-red text-white hvr-grow mb-3 w-100 pt-2">
-          <h2 class="m-0">PARTICIPAR AQUI >></h2>
+          <h2 class="m-0">Participar aquí >></h2>
         </a>
 
         <address class="mt-2 text-black">

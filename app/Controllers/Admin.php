@@ -11,6 +11,7 @@ class Admin extends BaseController
       //session()->destroy();
    }
 
+   // testing http://localhost/aguacerofestival/admin/competition?token=$2y$10$jYvrnC0/gjw9dTrXWJphlO0KbC9/Ermd.Lv14xUSC5UZ2jQTv1hGm
    public function stands(){
       
       $stand_model = new StandModel();
@@ -42,7 +43,6 @@ class Admin extends BaseController
       $dir = ROOTPATH . 'public/files/stands/' . $id . '/';
 
       $data['stand']['logo'] = array_map('basename', glob($dir."logo_*", GLOB_BRACE));
-      $data['stand']['pase'] = array_map('basename', glob($dir."pase_*", GLOB_BRACE));
 
       echo view('admin/stand_modal',$data);
 
@@ -150,8 +150,7 @@ class Admin extends BaseController
             'resp_name'    => $data[$i]['resp_name'],
             'resp_email'   => $data[$i]['resp_email'],
             'resp_phone'   => $data[$i]['resp_phone'],
-            'medium'       => $data[$i]['medium'],
-            'big'          => $data[$i]['big'],
+            'stands'       => $data[$i]['stands'],
             'created_at'   => $data[$i]['created_at']
          ];
 

@@ -128,8 +128,7 @@
                                     Correo: <?= $resp_email; ?><br>
                                     Teléfono: <?= $resp_phone; ?><br>
                                     Nombre Stand: <?= $name; ?><br>
-                                    Stand Medianos: <?= $medium ?? null; ?><br>
-                                    Stand Grandes: <?= $big ?? null; ?>
+                                    Stand : <?= $stands ?? null; ?>
                                   <br><br>
                                   <b>MUCHA SUERTE!</b>
                                 </p>
@@ -138,7 +137,7 @@
                           </tbody>
                         </table>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px; color: #999999;">
-                          <i>Si existe algun problema con tu postulación, comunicate con nosotros al correo aguacerocomics@gmail.com</i>
+                          <i>Si existe algun problema con tu postulación, comunicate con nosotros al correo contactofestival@aguacerocomics.cl</i>
                         </p>
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">
                           <!-- texto -->
@@ -165,7 +164,7 @@
                 </tr>
                 <tr>
                   <td class="content-block powered-by" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; color: #999999; font-size: 12px; text-align: center;" valign="top" align="center">
-                    <a href="https://festival.aguacerocomics.cl/" style="color: #999999; font-size: 12px; text-align: center; ">Festival Aguacero Cómics 2022</a>
+                    <a href="https://festival.aguacerocomics.cl/" style="color: #999999; font-size: 12px; text-align: center; ">Festival Aguacero Cómics 2023</a>
                   </td>
                 </tr>
               </table>

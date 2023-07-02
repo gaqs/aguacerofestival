@@ -20,8 +20,7 @@
                 <th>ID</th>
                 <th>Nombre</th>
                 <th>Descripción</th>
-                <th>M</th>
-                <th>G</th>
+                <th>stands</th>
                 <th>Responsable</th>
                 <th>Telefono</th>
                 <th data-priority="1">Email</th>
@@ -37,8 +36,7 @@
                       <td>'.$stands[$i]['id'].'</td>
                       <td>'.$stands[$i]['name'].'</td>
                       <td>'.substr($stands[$i]['description'], 0, 100).'...</td>
-                      <td>'.$stands[$i]['medium'].'</td>
-                      <td>'.$stands[$i]['big'].'</td>
+                      <td>'.$stands[$i]['stands'].'</td>
                       <td>'.$stands[$i]['resp_name'].'</td>
                       <td>'.$stands[$i]['resp_phone'].'</td>
                       <td>'.$stands[$i]['resp_email'].'</td>
@@ -57,8 +55,7 @@
                <th>ID</th>
                <th>Nombre</th>
                <th>Descripción</th>
-               <th>M</th>
-               <th>G</th>
+               <th>stands</th>
                <th>Responsable</th>
                <th>Telefono</th>
                <th>Email</th>

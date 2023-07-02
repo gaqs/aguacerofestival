@@ -143,6 +143,7 @@ a:hover, a:link, a:active{
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 4px solid black;
+  border-bottom: 4px solid black;
 }
 #stands{
   padding: 4rem 0 5rem 0;

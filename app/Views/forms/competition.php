@@ -99,15 +99,14 @@
                                  <div id="file_comic_2_help" class="form-text">Formatos permitidos .jpg, .jpeg, .png, .pdf. Resolución no menor a 2480 x 3508 pixeles, 300 ppp.</div>
                                  <div class="invalid-feedback">Archivo inválido</div>
                               </div>
-
-                              <button class="btn  btn-danger text-white btn-lg w-100 mt-5 fs-4" type="submit" id="submit_stand" name="submit_something">
-										   <i class="fa-solid fa-arrow-up-right-from-square"></i> ENVIAR 
-                              </button>
                            </div>
 
                         </p>
                      </div>
                   </div>
+                  <button class="btn  btn-danger text-white btn-lg w-100 mt-5 fs-5" type="submit" id="submit_stand" name="submit_something">
+                     <i class="fa-solid fa-paper-plane"></i> Enviar participación
+                  </button>
                </div>
 
             </div>
