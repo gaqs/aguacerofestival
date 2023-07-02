@@ -130,4 +130,4 @@ nb-configuration.xml
 /.php-cs-fixer.php
 
 #extras
-public/files/usuarios/
+public/files/
