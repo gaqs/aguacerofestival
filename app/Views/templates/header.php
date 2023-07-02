@@ -30,16 +30,14 @@
     <meta property="twitter:title" content="Aguacero Festival Internacional de Valdivia 2023">
     <meta property="twitter:description" content="Aguacero Festival Internacional de Cómics de Valdivia, tiene como prioridad fomentar la lectura en los niños y jóvenes de la Región de Los Ríos, a través del lenguaje de la Narrativa Gráfica o Cómic.">
     <meta property="twitter:image" content="<?= base_url('img/saval.jpg'); ?>">
-
-    <!--
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    -->
-
+  <!--
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" type="text/css" href=<?= base_url("dist/bootstrap-5.1.3/css/bootstrap.css"); ?>>
     <link rel="stylesheet" type="text/css" href=<?= base_url("dist/fontawesome-6.0.0/css/all.css?v=0.1"); ?>>
@@ -52,7 +50,7 @@
 
     <link rel="stylesheet" type="text/css" href="<?= base_url('dist/flipdown/flipdown.css?v=0.2');?>">
 
-    <link rel="stylesheet" type="text/css" href=<?= base_url("css/style.css?v=2.0"); ?>>
+    <link rel="stylesheet" type="text/css" href=<?= base_url("css/style.css?v=2.1"); ?>>
 
     <script type="text/javascript" src="<?= base_url('js/jquery-3.6.0.js');?>"></script>
     

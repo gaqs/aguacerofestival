@@ -14,6 +14,7 @@ class Home extends BaseController
       echo view('carousel');
       echo view('honorees');
       echo view('competition');
+      echo view('stands');
       echo view('gallery');      
       echo view('news');
       echo view('aboutus');
@@ -173,11 +174,11 @@ class Home extends BaseController
             'name'              => $this->request->getVar('name'),
             'rrss'              => $this->request->getVar('rrss'),
             'description'       => $this->request->getVar('description'),
-            'medium'            => $this->request->getVar('medium'),
-            'big'               => $this->request->getVar('big'),
+            'stands'            => $this->request->getVar('stands'),
 
             'resp_name'         => $this->request->getVar('resp_name'),
             'resp_email'        => $this->request->getVar('resp_email'),
+            'resp_country'      => $this->request->getVar('resp_country'),
             'resp_phone'        => $this->request->getVar('resp_phone'),
             'resp_participants' => $this->request->getVar('participants'),
 
@@ -185,6 +186,10 @@ class Home extends BaseController
             'business_rut'      => $this->request->getVar('business_rut'),
             'business_sii'      => $this->request->getVar('business_sii'),
             'business_sell'     => $this->request->getVar('business_sell'),
+
+            'business_legalname'    => $this->request->getVar('business_legalname'),
+            'business_legaladdress' => $this->request->getVar('business_legaladdress'),
+            'business_legalphone'   => $this->request->getVar('business_legalphone'),
 
             'bank_titular'      => $this->request->getVar('bank_titular'),
             'bank_rut'          => $this->request->getVar('bank_rut'),
@@ -202,7 +207,6 @@ class Home extends BaseController
           $files = $this->request->getFiles();
 
           $logos  = $files['logos'];
-          $pase   = $files['pase'];
 
           if( $logos ){
             for ($i=0; $i < count($logos); $i++) { 
@@ -211,13 +215,7 @@ class Home extends BaseController
               $logos[$i]->move(ROOTPATH.'public/files/stands/'.$user_id.'/', $filename);
             }    
           }
-          
-          if( $pase ){
-            $ext = pathinfo( $pase->getName(), PATHINFO_EXTENSION );
-            $filename = 'pase_'.uniqidReal(6).'.'.$ext; 
-            $pase->move(ROOTPATH.'public/files/stands/'.$user_id.'/', $filename);
-          }
-
+        
           $message = view('email/stands', $userData);
           send_email($userData['resp_email'], '', 'Postulacion correcta', $message, '');
         

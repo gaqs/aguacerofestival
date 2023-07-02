@@ -31,12 +31,33 @@
 </style>
 <section id="stands" >
     <div class="container mt-5 text-center">
+        <h2 class="text-red display-4">POSTULACION STANDS 2023</h2>
+        <h4 class="text-red mb-5"><b>Desde el 29 de Julio al 31 de Agosto.</b></h4>
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <img src="<?= base_url('img/saval.jpg');?>" class="w-100" alt="">
+            </div>
+            <div class="col-md-5 text-start">
+                <b>Resultados disponibles el 5 de Agosto.</b>
+                <br><br>
+                <p>Convocatoria para librerias, tiendas, artistas, relacionados a la narrativa grafica e ilustración.</p>
+                <p>
+                    <b>Cupos:</b> 100 Stands disponibles.<br>
+                    <b>Fecha del evento:</b> Viernes 16 al Domingo 18 de Diciembre.<br>
+                    <b>Lugar:</b> Centro de Ferias del Parque Saval. Ubicado en Av.Miguel Agüero s/n, Isla Teja, Valdivia.
+                </p>
+                <div class="btn btn-danger text-white mt-4"><i class="fa-solid fa-paste"></i> Ir a detalles y Formulario</div>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="container mt-5 text-center">
         <h2 class="text-red mb-5 display-4">STANDS</h2>
         <div class="row justify-content-center">
 
             <div class="col-md-12">
                 <div class="slick-image mb-3">
-                    <?php
+                    <?php /*
                         $content = file_get_contents('img/stands/2022/stands.json');
                         $json = json_decode($content);
                         $aux = 0;
@@ -61,28 +82,30 @@
                             
                             
                         }
-                    ?>
+                    */ ?>
                 </div>
             </div>
 
         </div>
         <div class="slick">
-            <?php
+            <?php /*
                 for ($i=0; $i < count($json) ; $i++) {
                     echo '<div>
                             <img src="img/stands/2022/'.$json[$i]->logo.'" class="w-100 rounded-3 border border-4 border-dark" alt="">
                         </div>';
                 }
-            ?>
+            */ ?>
         </div>
         
     </div>
     <div class="text-center mt-3 mb-5 pb-5">
         <a href="<?= base_url('home/all_stands'); ?>"><h2>Ver todos los stands >></h2></a>
     </div>
+            -->
 </section>
 
 <script>
+    /*
     $(document).ready(function(){
         $('.slick-image').slick({
             slidesToShow: 3,
@@ -136,4 +159,5 @@
         });
         $('.slick').slick('slickUnfilter');
     });
+    */
 </script>

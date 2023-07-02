@@ -49,7 +49,7 @@ body {
 }
 body {
     padding-top: 100px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.1rem;
     /*
     background-image: url('../img/festival_fondo.jpg');
@@ -57,6 +57,11 @@ body {
   	background-repeat: no-repeat;
   	background-size: cover;
     */
+}
+
+.flipdown.flipdown__theme-dark{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.1rem;
 }
 .alphakind{
   font-family: 'alphakindregular';
@@ -140,6 +145,8 @@ a:hover, a:link, a:active{
   border-top: 4px solid black;
 }
 #stands{
+  padding: 4rem 0 5rem 0;
+  /*
   background-image: url('../img/background_stands2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,6 +154,7 @@ a:hover, a:link, a:active{
 
   border-top: 4px solid black;
   border-bottom: 4px solid black;
+  */
 }
 .stand_container, .card_container{
   overflow: hidden;
@@ -993,3 +1001,9 @@ z-index: -1;
   }
 }
 /*   RESPONSIVE  */
+
+
+.form-control, .form-select, .form-check-input{
+  border: 1px solid #999 !important;
+}
+

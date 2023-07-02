@@ -1,7 +1,7 @@
 <section id="auspicio">
   <div class="container-fluid">
     <div class="container">
-      <div class="row justify-content-md-center pt-5 mt-5 text-center">
+      <div class="row justify-content-md-center mt-5 text-center">
 
         <div class="col-md-3 col-6 offset-0 mb-2 d-flex align-items-center">
           <span class="logos_top" style="margin-top:-310px;">Organiza</span>
@@ -32,10 +32,16 @@
           </a>
         </div>
 
-        <div class="col-md-3 col-6 offset-0 mb-2 d-flex align-items-center">
+        <div class="col-md-3 col-6 mb-2 d-flex align-items-center">
           <span class="logos_top" style="margin-top:-250px;">Colabora</span>
           <a href="https://www.bibliotecasantiago.gob.cl/" target="_blank">
             <img src="img/logos/20.png" alt="" class="w-100 hvr-shrink">
+          </a>
+        </div>
+        <div class="col-md-3 col-6  mb-2 d-flex align-items-center">
+          <span class="logos_top" style="margin-top:-250px;">Media Partner</span>
+          <a href="https://www.bibliotecasantiago.gob.cl/" target="_blank">
+            <img src="img/logos/13.png" alt="" class="w-100 hvr-shrink">
           </a>
         </div>
 

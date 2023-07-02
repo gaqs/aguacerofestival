@@ -2,6 +2,7 @@
 namespace App\Controllers;
 use App\Models\UserModel;
 use App\Models\StandModel;
+use App\Models\CompetitionModel;
 
 class Admin extends BaseController
 {
@@ -65,8 +66,64 @@ class Admin extends BaseController
       }else{
          echo 'No tiene permisos suficientes para acceder a este sitio.';
       }
-      
-      
+       
+   }
+
+   public function competition(){
+
+      $comp_model = new CompetitionModel();
+      $data['competition'] = $comp_model->findAll();
+
+      $token = $this->request->getVar('token');
+      $db = db_connect();
+      $builder = $db->table('security_tokens')->where('token', $token)->get()->getResult();
+
+      $data['token'] = $token;
+
+      if( !empty($builder) ){
+         echo view('templates/header');
+         echo view('navbar');
+         echo view('admin/competition', $data);
+         echo view('templates/footer');
+      }else{
+         echo 'No tiene permisos suficientes para acceder a este sitio.';
+      }
+
+   }
+
+   public function show_competition(){
+      $comp_model = new CompetitionModel();
+
+      $id = $this->request->getVar('id');
+      $data['competition'] = $comp_model->where('id', $id)->first();
+
+      $dir = ROOTPATH . 'public/files/competition/' . $id . '/';
+
+      $filename = array_map('basename', glob($dir."*.{jpg,png,pdf}", GLOB_BRACE));
+      $data['image'] = base_url().'/public/files/competition/'.$id.'/'.$filename[0];
+
+      echo view('admin/competition_modal',$data);
+
+   }
+
+   public function full_competition(){
+      //var_dump( session()->getTempdata('loggedIn') );
+      $token = $this->request->getVar('token');
+      $db = db_connect();
+      $builder = $db->table('security_tokens')->where('token', $token)->get()->getResult();
+
+      if( !empty($builder) ){
+         $comp_model = new CompetitionModel();
+         $builder = $comp_model->findAll();
+         $data['competition'] = $builder;
+
+         //echo view('templates/header');
+         //echo view('navbar');
+         echo view('admin/competition_table', $data);
+         //echo view('templates/footer');
+      }else{
+         echo 'No tiene permisos suficientes para acceder a este sitio.';
+      }
    }
 
    public function newsletter(){

@@ -1,4 +1,4 @@
-<section id="noticias" class="my-5 py-5">
+<section id="noticias" class="my-5">
     <div class="container text-center">
         <h2 class="text-red display-4">NOTICIAS</h2>
         <div class="row justify-content-center">

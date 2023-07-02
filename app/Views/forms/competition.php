@@ -6,7 +6,7 @@
          </div>
       </div>
    <?php endif ?>
-   <form class="row needs-validation" action="<?= base_url('home/competition'); ?>" method="post" enctype="multipart/form-data" novalidate> <!-- <?= base_url('home/competition'); ?> -->
+   <form class="row needs-validation" action="<?= base_url('home/competition'); ?>" method="post" enctype="multipart/form-data" novalidate>
       <div class="card">
          <div class="card-body">
             <h2 class="card-title fs-2 text-red text-center">9NA COMPETENCIA NACIONAL DE CÓMICS AGUACERO 2023</h2>
@@ -17,7 +17,7 @@
 
                   <div class="card m-0">
                      <div class="card-body">
-                        <div class="card-title text-red">Datos básicos</div>
+                        <h5 class="card-title text-red">Datos básicos</h5>
                         <hr>
                         <p class="card-text">
                            <div class="row">
@@ -93,15 +93,15 @@
                                  <div class="invalid-feedback">Archivo inválido</div>
                               </div>
 
-                              <div class="mb-3 col-md-12">
+                              <div class="mb-3 col-md-12 d-none">
                                  <label for="file_comic_2" class="form-label" aria-describedby="">Sube un segundo trabajo aquí (opcional)</label>
                                  <input class="form-control" type="file" id="file_comic_2" name="comic[]" aria-describedby="file_comic_2_help">
                                  <div id="file_comic_2_help" class="form-text">Formatos permitidos .jpg, .jpeg, .png, .pdf. Resolución no menor a 2480 x 3508 pixeles, 300 ppp.</div>
                                  <div class="invalid-feedback">Archivo inválido</div>
                               </div>
 
-                              <button class="btn btn-lg btn-primary w-100 mt-5" type="submit" id="submit_stand" name="submit_something">
-										   <i class="fa-solid fa-arrow-up-right-from-square"></i> Enviar 
+                              <button class="btn  btn-danger text-white btn-lg w-100 mt-5 fs-4" type="submit" id="submit_stand" name="submit_something">
+										   <i class="fa-solid fa-arrow-up-right-from-square"></i> ENVIAR 
                               </button>
                            </div>
 

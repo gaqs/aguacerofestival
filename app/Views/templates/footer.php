@@ -57,14 +57,23 @@
 </body>
 </html>
 
+<style>
+  .btn_close{
+    top:20px;
+    right:20px;
+    background:transparent !important;
+    opacity:1;
+    width: inherit;
+    height: inherit;
+  }
+
+</style>
 <!-- modal pop up-->
 <div class="modal fade" id="le_modal" tabindex="-1" aria-labelledby="le_modal_label" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" name="button_close" aria-label="Close"></button>
-      </div>
       <div class="modal-body">
+        <button type="button" class="btn-close btn_close position-absolute fs-2" data-bs-dismiss="modal" name="button_close" aria-label="Close"><i class="fa-solid fa-circle-xmark"></i></button>
         <img src="<?= base_url('public/img/afiche_2023.jpg');?>" alt="" class="w-100">
       </div>
       <div class="modal-footer">
@@ -91,10 +100,10 @@
 
   $(document).ready(function(){
 
-    $('#stands_table').DataTable({
+    $('#stands_table, #competition_table').DataTable({
       "language" : {
         "url" : "https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json",
-        "responsive": true
+        "responsive": true,
       },
       "bStateSave" : true,
       "fnStateSave" : function(oSettings, oData){
@@ -102,7 +111,7 @@
       },
       "fnStateLoad": function(oSettings){
         return JSON.parse(localStoragegetItem('DataTables'));
-      }
+      },
     });
 
 

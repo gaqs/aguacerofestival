@@ -13,7 +13,7 @@
           <i class="fas fa-play-circle play_yutu"></i>
           <img src="https://i3.ytimg.com/vi/W6S-CLCEb_c/maxresdefault.jpg" class="w-100 thumbnail" alt="">
         </a>
-        <a href="<?= base_url('#'); ?>" target="_blank" class="btn btn-success btn-lg text-white hvr-grow mb-3 w-100 disabled">
+        <a href="<?= base_url('#'); ?>" target="_blank" class="btn btn-success btn-lg text-white hvr-grow mb-3 w-100 disabled d-none">
           <h3 class="m-0"><i class="fas fa-file-pdf pe-2"></i> GANADORES CONCURSO DE CÓMICS 2022</h3>
         </a>
       </div>
