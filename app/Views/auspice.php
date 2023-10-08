@@ -25,14 +25,25 @@
         <div class="col-md-6 col-12 offset-0 mb-2 d-flex align-items-center">
           <span class="logos_top" style="margin-top:-250px;">Auspicia</span>
           <a href="https://www.munivaldivia.cl/web/" target="_blank" class="me-5">
-            <img src="img/logos/3.png" alt="" class="w-100 hvr-shrink" style="filter: brightness(0%);max-width:200px;">
+            <img src="img/logos/3.png" alt="" class="w-100 hvr-shrink" style="filter: brightness(0%);max-width:250px;">
           </a>
           <a href="https://www.prochile.gob.cl/" target="_blank">
-            <img src="img/logos/prochile_gris.png" alt="" class="w-100 hvr-shrink" style="filter: brightness(0%);max-width:200px;">
+            <img src="img/logos/prochile_gris.png" alt="" class="w-100 hvr-shrink" style="filter: brightness(0%);max-width:250px;">
           </a>
         </div>
 
         <div class="col-md-3 col-6 mb-2 d-flex align-items-center">
+          <a href="https://barbudogrowler.cl/" target="_blank">
+            <img src="img/logos/19.png" alt="" class="w-100 hvr-shrink" style="max-width:200px;">
+          </a>
+        </div>
+        <div class="col-md-3 col-6 mb-2 d-flex align-items-center">
+          <a href="https://www.instagram.com/live360_eventos/" target="_blank">
+            <img src="img/logos/23.jpg" alt="" class="w-100 hvr-shrink">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-6 mb-2 d-flex align-items-center mt-4">
           <span class="logos_top" style="margin-top:-250px;">Colabora</span>
           <a href="https://www.bibliotecasantiago.gob.cl/" target="_blank">
             <img src="img/logos/20.png" alt="" class="w-100 hvr-shrink">

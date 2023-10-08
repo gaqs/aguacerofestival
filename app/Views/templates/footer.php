@@ -93,7 +93,7 @@
 <script type="text/javascript" src="<?= base_url('js/countdown.js');?>"></script>  <!-- tucutucu tucutu cutu -->
 <script type="text/javascript" src="<?= base_url('dist/flipdown/flipdown.js');?>"></script>
 
-<script type="text/javascript" src="<?= base_url('js/scripts.js?v=0.1');?>"></script>
+<script type="text/javascript" src="<?= base_url('js/scripts.js?v=0.2');?>"></script>
 
 <!-- Custom script -->
 <script type="text/javascript">

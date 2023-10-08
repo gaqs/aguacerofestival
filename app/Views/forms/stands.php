@@ -72,14 +72,24 @@
 										<input type="text" class="form-control" id="input_resp_phone" name="resp_phone" value="<?= set_value('resp_phone'); ?>" aria-describedby="resp_phone_help" required>
 										<div id="resp_phone_help" class="form-text"></div>
 									</div>
-									<div class="mb-3 col-md-6">
+									<div class="mb-3 col-md-5">
 										<label for="input_resp_email" class="form-label">Correo electrónico</label>
 										<input type="text" class="form-control" id="input_resp_email" name="resp_email" value="<?= set_value('resp_email'); ?>" aria-describedby="resp_email_help" required>
 										<div id="resp_email_help" class="form-text">Por este medio se notificarán los resultados o cualquier cambio en la evaluación.</div>
 									</div>
-									<div class="mb-3 col-md-6">
-										<label for="input_country" class="form-label">País Origen (Ciudad, region, país)</label>
-										<input type="text" class="form-control" id="input_resp_country" name="resp_country" value="<?= set_value('resp_country'); ?>" aria-describedby="resp_country" placeholder="Ejemplo. Valdivia, XIV Región de los Rios, Chile" required>
+									<div class="mb-3 col-md-2">
+										<label for="input_resp_city" class="form-label">Ciudad</label>
+										<input type="text" class="form-control" id="input_resp_city" name="resp_city" value="<?= set_value('resp_city'); ?>" aria-describedby="resp_city" placeholder="Valdivia" required>
+										<div id="resp_city_help" class="form-text"></div>
+									</div>
+									<div class="mb-3 col-md-3">
+										<label for="input_resp_region" class="form-label">Región</label>
+										<input type="text" class="form-control" id="input_resp_region" name="resp_region" value="<?= set_value('resp_region'); ?>" aria-describedby="resp_region" placeholder="XIV Región de los Rios" required>
+										<div id="resp_region_help" class="form-text"></div>
+									</div>
+									<div class="mb-3 col-md-2">
+										<label for="input_resp_country" class="form-label">País</label>
+										<input type="text" class="form-control" id="input_resp_country" name="resp_country" value="<?= set_value('resp_country'); ?>" aria-describedby="resp_country" placeholder="Chile" required>
 										<div id="resp_country_help" class="form-text"></div>
 									</div>
 									<div class="mb-3 col-md-7">

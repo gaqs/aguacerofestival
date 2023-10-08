@@ -184,10 +184,16 @@ $(document).ready(function() {
 	
 	})
 	
+	var admin = window.location.pathname.split( '/' )[3];
+	console.log( admin );
+
 	if( sessionStorage.getItem("wasClosed") != "true"){
-	setTimeout(function(){
-		$('#le_modal').modal('toggle');
-	}, 1000);
+		if( admin != 'competition' && admin != 'stands' ){
+			setTimeout(function(){
+				$('#le_modal').modal('toggle');
+			}, 1000);
+		}
+	
 	}
   
 

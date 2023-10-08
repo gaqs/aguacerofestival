@@ -25,12 +25,15 @@
         <a href="<?= base_url('files/competition/BASES_COMPETENCIA_NACIONAL_COMICS_2023.pdf'); ?>" target="_blank" class="btn btn-primary btn-lg text-white hvr-grow mb-3 w-100 pt-2">
           <h3 class="m-0"><i class="fas fa-file-pdf pe-2"></i> Bases concurso de cómics 2023</h3>
         </a>
+        <!--
         <p class="text-black">
           Para participar y subir tu trabajo, haz click en el siguiente enlace.  
         </p>
-        <a href="<?= base_url('home/competition'); ?>" class="btn btn-primary btn-lg bg-red text-white hvr-grow mb-3 w-100 pt-2">
+        
+        <a href="#" class="btn btn-primary btn-lg bg-red text-white hvr-grow mb-3 w-100 pt-2 disabled">
           <h2 class="m-0">Participar aquí >></h2>
         </a>
+        -->
 
         <address class="mt-2 text-black">
           <b>DUDAS? CONSULTAS?</b><br>

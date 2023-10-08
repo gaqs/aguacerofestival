@@ -9,9 +9,6 @@
         width: 160px !important;
         height: auto !important;
     }
-    #stands{
-        
-    }
     .link_a{
         position:absolute;
         top:0;
@@ -29,7 +26,11 @@
         /*background:blue;*/
     }
 </style>
-<section id="stands" >
+<div class="container">
+    <hr>
+</div>
+<section id="stands" class="mb-5 pb-5" >
+    <!--
     <div class="container mt-5 text-center">
         <h2 class="text-red display-4">POSTULACION STANDS 2023</h2>
         <h4 class="text-red mb-5"><b>Desde el 03 de Julio al 06 de Agosto a las 23:59</b></h4>
@@ -51,114 +52,62 @@
             </div>
         </div>
     </div>
-    <!--
+    -->
+    
     <div class="container mt-5 text-center">
-        <h2 class="text-red mb-5 display-4">STANDS</h2>
+        <h2 class="text-red">Conocer a los expositores</h2>
+        <h2 class="text-red mb-5 display-4">STANDS 2023</h2>
         <div class="row justify-content-center">
 
-            <div class="col-md-12">
-                <div class="slick-image mb-3">
-                    <?php /*
-                        $content = file_get_contents('img/stands/2022/stands.json');
-                        $json = json_decode($content);
-                        $aux = 0;
-                        $rrss = [];
-                        for ($i=0; $i < count($json) ; $i++) {
-                            $rrss = explode(",", $json[$i]->rrss);
-                            
-                            if( count($rrss) > 1 ){
-                                echo '<div style="position:relative;">
-                                        <img src="'.base_url().'/img/stands/2022/'.$json[$i]->logo.'?v=0.3" class="w-100 rounded-3 border border-4 border-dark hvr-shrink" alt="">
-                                        <a href="'.$rrss[0].'" target="_blank" class="link_a" title="'.$rrss[0].'"></a>
-                                        <a href="'.$rrss[1].'" target="_blank" class="link_b" title="'.$rrss[1].'"></a>
-                                    </div>';
-                                
-                            }else{
-                                echo '<div>
-                                        <a href="'.$json[$i]->rrss.'" target="_blank">
-                                            <img src="'.base_url().'/img/stands/2022/'.$json[$i]->logo.'?v=0.3" class="w-100 rounded-3 border border-4 border-dark hvr-shrink" alt="">
-                                        </a>
-                                    </div>';
-                            }
-                            
-                            
+        <div class="col-md-12">
+            <div class="slick-stands mb-3">
+                <?php 
+                    $content = file_get_contents('img/stands/stands_2023_nolink.json');
+                    $stands = (array)json_decode($content);
+
+                    for ($i=0; $i < count($stands); $i++) { 
+                        if ($i % 15 == 0) {
+                            echo '<div><div class="row">';
                         }
-                    */ ?>
-                </div>
+                ?>
+                
+                    <div class="col-md-2dot4 col-4">
+                        <a href="<?= $stands[$i]->RED_SOCIAL; ?>" target="_blank">
+                            <div class="stand_container">
+                                <img src="<?= base_url('img/stands/'.$stands[$i]->LOGO); ?>" class="w-100" alt="">
+                
+                                <div class="info_stand text-black text-center p-3 mt-2 d-flex justify-content-center">
+                                    <span>
+                                        <p class="fs-4 lh-sm mb-0"><b><?= $stands[$i]->NOMBRE; ?></b></p>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+               
+                <?php
+                        if (($i + 1) % 15 == 0 || $i == count($stands) - 1) {
+                            echo '</div></div>';
+                        }
+                    }
+                ?>
+               
             </div>
+        </div>
 
         </div>
-        <div class="slick">
-            <?php /*
-                for ($i=0; $i < count($json) ; $i++) {
-                    echo '<div>
-                            <img src="img/stands/2022/'.$json[$i]->logo.'" class="w-100 rounded-3 border border-4 border-dark" alt="">
-                        </div>';
-                }
-            */ ?>
-        </div>
-        
     </div>
+    <!--
     <div class="text-center mt-3 mb-5 pb-5">
         <a href="<?= base_url('home/all_stands'); ?>"><h2>Ver todos los stands >></h2></a>
     </div>
-            -->
+    -->
 </section>
 
 <script>
-    /*
     $(document).ready(function(){
-        $('.slick-image').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.slick',
-            dots: false,
-            centerMode: true,
-            focusOnSelect: true,
-            arrows:false,
-            responsive: [{
-                breakpoint:767,
-                settings:{
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }]
 
-        });
-        $('.slick').slick({
-            slidesToShow: 11,
-            slidesToScroll: 3,
-            asNavFor: '.slick-image',
-            dots: false,
-            centerMode: true,
-            focusOnSelect: true,
-            autoplay: false,
-            autoplaySpeed: 1500,
-            responsive: [
-                {
-                    breakpoint:991,
-                    settings:{
-                        slidesToShow: 7,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint:767,
-                    settings:{
-                        slidesToShow: 5,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint:540,
-                    settings:{
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                    }
-                }
-            ]
-        });
-        $('.slick').slick('slickUnfilter');
+        $('.slick-stands').slick();
+
     });
-    */
 </script>

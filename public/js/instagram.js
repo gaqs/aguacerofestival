@@ -2,10 +2,11 @@
 
 const gallery = document.querySelector('.gallery');
 
-const token = 'IGQVJXYmxkbk5Xc0JPRlVXdTdVdFNDUllfVmw1TWc2OTBoSmx0dnpGZAmRpUzRKQzltYVc3QW1RSjBpc0RJZADZAFR0Rkd1BVUUhrOWJWRTZA3aVY5SFdxQzIxdHVIeElsOFVQT0tnQVgwbFpFWE5SUjMyTwZDZD';
+const token = 'IGQWRNQkhtM19zTWt3SnMzb0dfTnNVX3k1ODBWVG5HREstVF83RHZAFOFdpbmhzVUhYX2dhMWVKOGVPNTR6ZAFhFbUs2cUUwLVItMTZANUUZAyTXVmanpJejRtZAUVIM1BjN1BoMDIzeGpELThzUTZAYWFJ2Y3A2VG1wQUUZD';
 
 const url = `https://graph.instagram.com/me/media?fields=media_type,thumbnail_url,media_url,caption,permalink,timestamp&limit=6&access_token=${token}`;
-    
+
+//console.log(url);
 fetch(url)
 .then(res => res.json())
 .then(data => createHtml(data.data) )

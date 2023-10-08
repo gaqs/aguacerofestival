@@ -2,7 +2,10 @@
     <div class="container">
         <h2 class="text-red display-4 text-center">CARACTERISTICAS DE STANDS Y CONSIDERACIONES</h2>
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-4">
+                <img src="<?= base_url('img/stand.jpg'); ?>" alt="" class="w-100 rounded">
+            </div>
+            <div class="col-md-8">
                 <div class="card w-100 h-100">
                     <div class="card-body">
                         <h2 class="card-title">Stands</h2>
@@ -34,7 +37,7 @@
                 </div>
             </div>
 
-            <div class="col-md-5">
+            <div class="col-md-4 mt-4">
                 <div class="card w-100 h-100 ext-start">
                     <div class="card-body">
                         <h2 class="card-title">Adicionalmente</h2>
@@ -51,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="col-md-12 mt-3">
+            <div class="col-md-8 mt-4">
                 <div class="card w-100 text-start">
                     <div class="card-body">
                         <h2 class="card-title">A considerar</h2>

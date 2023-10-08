@@ -13,8 +13,8 @@ class Home extends BaseController
       echo view('countdown');
       echo view('carousel');
       echo view('honorees');
-      echo view('competition');
       echo view('stands');
+      echo view('competition');
       echo view('gallery');      
       echo view('news');
       echo view('aboutus');
@@ -90,7 +90,7 @@ class Home extends BaseController
       echo view('templates/footer');
     }
 
-    public function competition(){
+    public function _competition(){
       $data = [];
 
       if( $this->request->getMethod() == 'post'){
@@ -161,7 +161,7 @@ class Home extends BaseController
       if( $this->request->getMethod() == 'post'){
       
         $rules = [
-          'resp_email' => ['label' => 'correo electrónico', 'rules' => 'required|min_length[6]|max_length[250]|is_unique[stands.resp_email]|valid_email']
+          'resp_email' => ['label' => 'correo electrónico', 'rules' => 'required|min_length[6]|max_length[250]']
         ];
 
         if( !$this->validate($rules) ){
@@ -169,6 +169,8 @@ class Home extends BaseController
 
         }else{
           $stand_model = new StandModel();
+
+          $country = $this->request->getVar('resp_city').','.$this->request->getVar('resp_region').','.$this->request->getVar('resp_country');
 
           $userData = [
             'name'              => $this->request->getVar('name'),
@@ -178,13 +180,13 @@ class Home extends BaseController
 
             'resp_name'         => $this->request->getVar('resp_name'),
             'resp_email'        => $this->request->getVar('resp_email'),
-            'resp_country'      => $this->request->getVar('resp_country'),
+            'resp_country'      => $country,
             'resp_phone'        => $this->request->getVar('resp_phone'),
             'resp_participants' => $this->request->getVar('participants'),
 
             'business_name'     => $this->request->getVar('business_name'),
             'business_rut'      => $this->request->getVar('business_rut'),
-            'business_address'  => $this->request->gerVar('business_address'),
+            'business_address'  => $this->request->getVar('business_address'),
             'business_sii'      => $this->request->getVar('business_sii'),
             'business_sell'     => $this->request->getVar('business_sell'),
 
@@ -218,10 +220,13 @@ class Home extends BaseController
           }
         
           $message = view('email/stands', $userData);
-          send_email($userData['resp_email'], '', 'Postulacion correcta', $message, '');
-        
-          return redirect()->to( base_url('home/message?status=success&id=2') );
+          $email = send_email($userData['resp_email'], '', 'Postulacion correcta', $message, '');
 
+          if( $email ){
+            return redirect()->to( base_url('home/message?status=success&id=2') );
+          }else{
+            return redirect()->to( base_url('home/message?status=success&id=4') );
+          }
         }
       }
       
@@ -239,7 +244,7 @@ class Home extends BaseController
         'resp_name' => 'Gustavo Quilodrán',
         'resp_email' => 'gaqs.02@gmail.com',
         'resp_phone' => '+569 946778',
-        'medium' => '1',
+        'stands' => '1',
         'created_at' => '2022-07-31 14:40:15'
       ];
 

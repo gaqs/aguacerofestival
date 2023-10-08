@@ -73,6 +73,10 @@
       <?= $stand['business_rut'];?>
    </div>
    <div class="col-md-12">
+      <label>Dirección:</label>
+      <?= $stand['business_address'];?>
+   </div>
+   <div class="col-md-12">
       <label>Giro comercial en SII :</label>
       <?= $stand['business_sii'];?>
    </div>

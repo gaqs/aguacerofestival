@@ -146,7 +146,7 @@ a:hover, a:link, a:active{
   border-bottom: 4px solid black;
 }
 #stands{
-  padding: 4rem 0 5rem 0;
+  padding: 4rem 0 0 0;
   /*
   background-image: url('../img/background_stands2.jpg');
   background-repeat: no-repeat;
@@ -590,7 +590,7 @@ padding: 10px;
 	}
 }
 
-.invitado_container{
+.invitado_container, .stand_container{
   position: relative;
   overflow: hidden;
   border-radius: 50%;
@@ -599,7 +599,7 @@ padding: 10px;
   overflow: hidden;
   cursor: pointer;
 }
-.invitado_container::before{
+.invitado_container::before, .stand_container::before{
   background-color: rgba(246, 237, 19, .9);
   content: "";
   position: absolute;
@@ -612,13 +612,16 @@ padding: 10px;
   animation: slideOutDown 0.5s;
   margin: 0 0 0 -30%;
 }
-.invitado_container:hover::before{
+.stand_container::before{
+  margin: 0 0 0 -100% !important;
+}
+.invitado_container:hover::before, .stand_container:hover::before{
   top:0;
   -webkit-animation: slideInUp 0.3s;
   animation: slideInUp 0.3s;
 }
 
-.info_invitado{
+.info_invitado, .info_stand{
   position: absolute;
   right: 0;
   left: 0;
@@ -634,7 +637,7 @@ padding: 10px;
   z-index: 3;
 
 }
-.invitado_container:hover > .info_invitado{
+.invitado_container:hover > .info_invitado, .stand_container:hover > .info_stand{
   --animate-delay: 0.5s;
   -webkit-animation: zoomIn 0.5s;
   animation: zoomIn 0.5s;
@@ -1008,3 +1011,8 @@ z-index: -1;
   border: 1px solid #999 !important;
 }
 
+
+
+.slick-prev::before, .slick-next::before{
+  color:black !important;
+}

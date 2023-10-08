@@ -10,7 +10,11 @@
     <meta http-equiv="X-Frame-Options" content="allow-from https://www.youtube.com/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" type="image/x-icon" href="<?= base_url('img/logo_aguacero.png'); ?>">
+    <link rel="icon" type="image/x-icon" href="<?= base_url('img/favicon.png'); ?>">
+    <link rel="apple-touch-icon" type="image/x-icon" href="<?= base_url('img/favicon.png'); ?>">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="<?= base_url('img/favicon.png'); ?>">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('img/favicon.png'); ?>">
+
 
     <!-- Primary Meta Tags -->
     <title>Aguacero Festival Internacional de Valdivia 2023</title>
@@ -39,7 +43,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" type="text/css" href=<?= base_url("dist/bootstrap-5.1.3/css/bootstrap.css"); ?>>
+    <link rel="stylesheet" type="text/css" href=<?= base_url("public/dist/bootstrap-5.1.3/css/bootstrap.css"); ?>>
     <link rel="stylesheet" type="text/css" href=<?= base_url("dist/fontawesome-6.0.0/css/all.css?v=0.1"); ?>>
     <link rel="stylesheet" type="text/css" href=<?= base_url("css/animate.css?v=0.1"); ?>>
     <link rel="stylesheet" type="text/css" href=<?= base_url("css/hover.css"); ?>>
@@ -50,7 +54,7 @@
 
     <link rel="stylesheet" type="text/css" href="<?= base_url('dist/flipdown/flipdown.css?v=0.2');?>">
 
-    <link rel="stylesheet" type="text/css" href=<?= base_url("css/style.css?v=2.1"); ?>>
+    <link rel="stylesheet" type="text/css" href=<?= base_url("css/style.css?v=2.2"); ?>>
 
     <script type="text/javascript" src="<?= base_url('js/jquery-3.6.0.js');?>"></script>
     

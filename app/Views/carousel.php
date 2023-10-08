@@ -1,4 +1,4 @@
-<div id="carousel_top" class="carousel slide" data-bs-ride="true" data-bs-wrap="true" data-bs-interval="false">
+<div id="carousel_top" class="carousel slide" data-bs-ride="true" data-bs-wrap="true" data-bs-interval="5000">
   <div class="carousel-indicators">
     <button data-bs-target="#carousel_top" data-bs-slide-to="0" class="active"></button>
     <button data-bs-target="#carousel_top" data-bs-slide-to="1" class=""></button>
@@ -8,7 +8,37 @@
     w-->
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active">
+  <div class="carousel-item active">
+
+    <div class="container-fluid slider_1" style="max-width:inherit;">
+      <div class="row slider_caption gx-5 justify-content-sm-center">
+
+        <div class="col-md-6 carousel_logo pt-md-5 py-5">
+          <div class="py-4 pb-md-0 text-md-end text-center align-self-center animate__animated animate__bounceInUp animate__delay-05s">
+              <h1 class="text-black lh-1" style="font-size:4rem;"><b>9° Concurso Nacional de Cómics<span class="text-red"> AGUACERO 2023</span></b></h1>
+          </div>
+        </div>  
+        
+
+        <div class="col-md-6 text-start">
+          <div class="row carousel_info">
+          <div class="text-white d-flex align-items-center animate__animated animate__bounceInDown animate__delay-04s">
+            <h1 style="font-size:3rem;">
+              Recepción de obras
+              <hr style="height:3px;opacity:1;">
+              PLAZO EXTENDIDO<br>
+              7 DE OCTUBRE
+              <br>
+            <a style="color:#f6ed12 !important;display:contents;" href="<?= base_url('#concurso')?>"><br> POSTULAR AQUÍ</a></h1>
+          </div>
+          </div>  
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    <div class="carousel-item">
 
       <div class="container-fluid slider_1" style="max-width:inherit;">
         <div class="row slider_caption gx-5">
@@ -82,30 +112,7 @@
       </div>
     </div>
 
-    <div class="carousel-item">
-
-      <div class="container-fluid slider_1" style="max-width:inherit;">
-        <div class="row slider_caption gx-5 justify-content-sm-center">
-
-          <div class="col-md-6 carousel_logo pt-md-5 py-5">
-            <div class="py-4 pb-md-0 text-md-end text-center align-self-center animate__animated animate__bounceInUp animate__delay-05s">
-                <h1 class="text-black lh-1" style="font-size:5rem;" ><b>9na Competencia Nacional de Cómics<span class="text-red"> AGUACERO 2023</span></b></h1>
-                <p class="ms-5 ps-5 text-black"><b>¡Lápiz y papel alerta!</b></p>
-            </div>
-          </div>  
-          
-
-          <div class="col-md-6 text-start">
-            <div class="row carousel_info">
-            <div class="text-white d-flex align-items-center animate__animated animate__bounceInDown animate__delay-04s">
-              <h1>Para mayor información<br><a style="color:#f6ed12 !important;display:contents;" href="<?= base_url('#concurso')?>">haz click aquí</a></h1>
-            </div>
-            </div>  
-          </div>
-
-        </div>
-      </div>
-    </div>
+    
 
   </div>
 

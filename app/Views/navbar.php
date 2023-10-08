@@ -58,10 +58,10 @@
           <a class="nav-link" href="<?= base_url('#honorees');?>"><b>INVITADOS</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('#concurso');?>"><b>COMPETENCIA</b></a>
+          <a class="nav-link" href="<?= base_url('#stands');?>"><b>STANDS</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('#stands');?>"><b>POSTULACION STANDS</b></a>
+          <a class="nav-link" href="<?= base_url('#concurso');?>"><b>COMPETENCIA DE COMICS</b></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?= base_url('#galeria');?>"><b>GALERIA</b></a>

@@ -52,14 +52,16 @@ function send_email($send_to, $send_cc, $subject, $message, $attach){
   $email = \Config\Services::email();
 
   $config = Array(
-							'protocol' => 'smtp',
-							'SMTPHost' => 'mail.aguacerocomics.cl',
-							'SMTPPort' => '587',
-							'SMTPUser' => 'postmaster@aguacerocomics.cl',
-							'SMTPPass' => 'N0QM@33bq7UI',
-							'mailType' => 'html',
-							'charset'  => 'utf-8',
-							'newline'	 => "\r\n"
+							'protocol'    => 'smtp',
+							'SMTPHost'    => 'mail.aguacerocomics.cl',
+							'SMTPPort'    => '587',
+							'SMTPUser'    => 'postmaster@aguacerocomics.cl',
+							'SMTPPass'    => 'N0QM@33bq7UI',
+              'SMTPTimeout' => '10',
+							'mailType'    => 'html',
+							'charset'     => 'utf-8',
+							'newline'	    => "\r\n"
+              
 						);
 
   $email->initialize($config);
@@ -73,16 +75,15 @@ function send_email($send_to, $send_cc, $subject, $message, $attach){
   $email->setSubject($subject);
   $email->setMessage($message);
   
-  $email->send();
-  return true;
-  /*
-  if ( $email->send() ){
+  $send = $email->send();
+  //var_dump($send);
+  if ( $send ){
     return true;
   } else {
-    echo $email->printDebugger();
+    //echo $email->printDebugger();
     return false;
   }
-  */
+
 }//end send_email
 
 function var_console($data) {

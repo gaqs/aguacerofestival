@@ -1,7 +1,7 @@
 <section id="honorees" class="my-5 py-5">
     <div class="container text-center">
         <?php
-            $dir = file_get_contents( ROOTPATH . 'public/files/invitados_2023.json' );
+            $dir = file_get_contents( ROOTPATH . 'public/img/invitados/invitados_2023.json' );
             $json = json_decode( $dir );
 
             $homenajeados    = (array)$json->homenajeados;
